@@ -1,0 +1,277 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+
+
+/* topo */
+
+@media (max-width: 425px) {
+    img { width: calc( 100% / 2 );}
+    h2 { font-size: 18px; }
+    .topo .cabecalho { flex-direction: column; justify-content: space-around; text-align: center; }
+    .links-topo { width: 100%; border-top: 2px solid #009fa5; }
+    .links-topo a:hover { border-bottom: 1px solid black; color: black;}
+    .logo {width: 100px;}
+}
+
+
+.topo {
+    background-color: #00cad1;
+    width: 100%;
+}
+
+.topo .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+    min-height: 60px;
+    max-width: 1200px;
+}
+
+.links-topo {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.links-topo a:hover {
+    color: #004b4c;
+    border-bottom: 2px solid #004b4c;
+}
+
+.logo {
+    height: 60px;
+}
+
+
+
+
+
+
+
+/* primeira section */
+
+@media ( max-width: 425px ) {
+    .imagem-fundo { height: 200px; }
+    .titulo-imagem { font-size: 18px; }
+    .especialidade { width: 100%; }
+    .especialidade figcaption { font-size: 7px;}
+}
+
+@media ( max-width: 768px ) {
+    .imagem-fundo { height: 300px; }
+    .container-medico img { display: none; }
+    .especialidade {width: calc(100% / 2 - 40px);}
+    .especialidades {justify-content: center;}
+}
+
+@media ( max-width: 1024px ) {
+    .imagem-fundo { height: 400px; }
+}
+
+.imagem-fundo {
+    background-image: url(recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.space-imagem {
+    max-width: 1200px;
+}
+
+.titulo-imagem {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+/* segunda section */
+
+
+.section2{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titulo {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.titulo h2 {
+    padding-top: 20px;
+}
+
+.container-medico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista {
+    text-align: left;
+}
+
+.lista h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.especialidades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.especialidade {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.especialidade img {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.especialidade figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00cad1;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.link:hover {
+    transition: 1s;
+    color: black;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #004b4c;
+}
+
+
+
+
+
+
+
+
+/* pagina 2 */
+
+.links {
+    padding: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #00cad1;
+    margin-right: 10px;
+}
+
+.links a:hover {
+    color: #fff;
+    background-color: #00cad1;
+    padding: 7px;
+    border-radius: 30px;
+    transition: 1.5s;
+    border: none;
+}
+
+.tabelas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+}
+
+.tabelas img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabelas table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.tabelas thead {
+    background-color: #00cad1;
+    text-align: left;
+    color: #fff;
+    height: 18%;
+}
+
+.tabelas tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.tabelas tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.tabelas th, .tabelas td {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .tabelas img { display: none;} 
+    .tabelas { align-items: center; justify-content: center; padding-bottom: 30px;}
+}
+
+@media (max-width: 425px) {
+    .tabelas {padding-bottom: 100px;}
+}
